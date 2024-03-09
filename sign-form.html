@@ -3,14 +3,30 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Форма входа</title>
+		<link rel="stylesheet" href="/styles/normalize.css" />
+		<link rel="stylesheet" href="/styles/signin-form.css" />
+		<title>Signin form</title>
 	</head>
 	<body>
-		<form>
-			<input name="sign-login" id="sign-login" type="text" />
-			<input name="sign-password" id="sign-password" type="password" />
-			<button onclick="GetsignInInfo()">Зарегистрироваться</button>
-		</form>
+		<div class="signin-form">
+			<h2>Приветсвуем тебя в нашем сообществе взаимопомощи!</h2>
+			<form method="post" class="signin-form">
+				<div><label for="login">Логин</label> <input type="text" id="login" /></div>
+				<br />
+				<div><label for="password">Пароль</label> <input type="password" id="password" /></div>
+				<br />
+				<div><button type="button" class="button_signin">Войти</button></div>
+			</form>
+			<section class="to registeration">
+				<div>Зарегистрируйся пожалуйста, если у тебя нет аккаунта</div>
+				<button class="to_registeration">
+					<a href="/registration-form.html">Зарегистрироваться</a>
+				</button>
+			</section>
+			<section class="reset_password">
+				<div>Забыла пароль? Восстановить пароль:</div>
+				<button class="reset_password_but">Восстановить пароль</button>
+			</section>
+		</div>
 	</body>
-	<script src="scripts/registration.js"></script>
 </html>
