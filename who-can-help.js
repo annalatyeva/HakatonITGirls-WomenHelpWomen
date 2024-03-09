@@ -23,10 +23,9 @@ function saveToLocalStorage() {
 
   // Обработчик события при вводе текста в поле поиска
 document.querySelector('#button-search').addEventListener('click', function(event) {
-    showSpecialists('');
     let card = document.querySelector('.card');
     card.classList.toggle('display')
 });
-
+showSpecialists('');
   // Сохранение специалистов в Local Storage
 saveToLocalStorage();
