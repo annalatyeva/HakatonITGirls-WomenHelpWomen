@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="stylesheet" href="/styles/normalize.css" />
+		<link rel="stylesheet" href="/styles/registration-form.css" />
+		<title>Registration-form</title>
 	</head>
 	<body>
-		<form>
-			<input type="text" id="login" placeholder="Логин" required /><br />
-			<input type="password" id="password" placeholder="Пароль" required /><br />
-			<label><input type="checkbox" name="strength" value="Сила" /> Сила</label><br />
-			<label><input type="checkbox" name="strength" value="Ловкость" /> Ловкость</label><br />
-			<label><input type="checkbox" name="strength" value="Интеллект" /> Интеллект</label><br />
-			<label><input type="checkbox" name="strength" value="Выносливость" /> Выносливость</label><br />
-			<textarea id="description" placeholder="Описание" required></textarea><br />
-			<button type="button" onclick="submitForm()">Зарегистрировать</button>
-		</form>
-		<div id="user-cards-container"></div>
+		<div class="registration-form">
+			<h2>Приветсвуем тебя в нашем сообществе взаимопомощи!</h2>
+			<p>Для того, что бы стать частью нашего сообщества заполни, пожалуйста, анкету.</p>
+			<h3>Рады видеть тебя среди нас</h3>
+			<form method="post" class="registr-form">
+				<div><label for="login">Логин</label> <input type="text" placeholder="superwomen" id="login" /></div>
+				<br />
+				<div><label for="password">Пароль</label> <input type="password" id="password" /></div>
+				<br />
+				<div><label for="name">Имя и Фамилия</label> <input type="text" placeholder="Фиона Великолепная" id="name" /></div>
+				<br />
+				<div><label for="tel">Номер телефон</label><input type="tel" placeholder="89999999999" id="tel" /></div>
+				<br />
+				<div><label for="email">Email</label><input type="email" placeholder="test@test.ru" id="email" /></div>
+				<br />
+				<div><label for="city">Твой город</label> <input type="text" placeholder="Москва" id="city" /></div>
+				<br />
+				<div>
+					<p>В какой области ты можешь помочь?</p>
+					<input type="checkbox" name="psychology" value="1" checked="checked" /> Психология <br />
+					<input type="checkbox" name="Law_family" value="2" /> Семейное право<br />
+					<input type="checkbox" name="Law_civil" value="3" /> Гражданское право <br />
+					<input type="checkbox" name="Law_international" value="4" /> Международное право <br />
+					<input type="checkbox" name="women_med" value="5" /> Женское здоровье <br />
+					<input type="checkbox" name="medicine" value="6" /> Медицина <br />
+					<input type="checkbox" name="food" value="7" /> Кулинарии/приготовление пищи <br />
+					<input type="checkbox" name="entertaiment" value="8" /> Развлечения для детей <br />
+					<input type="checkbox" name="home" value="9" /> Предоставление временного проживания <br />
+					<input type="checkbox" name="car" value="10" /> Автоволонтерство <br />
+					<input type="checkbox" name="child_care" value="10" /> Услуги няни/сиделки
+				</div>
+				<div>
+					<label for="comment"> Дополнительный комментарий: <textarea name="comment" cols="40" rows="3"></textarea></label>
+				</div>
+				<br />
+				<div><button type="button" class="button_registration">Сохранить</button></div>
+			</form>
+		</div>
 	</body>
-	<script src="scripts/signin-form.js"></script>
 </html>
