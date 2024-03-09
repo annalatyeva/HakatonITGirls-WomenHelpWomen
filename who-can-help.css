@@ -11,8 +11,14 @@ body {
 #results {
     width: 100%;
     display: block;
-    float: left;
     transition: width .2s;
+}
+
+img {
+    display: block;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
 }
 
 .card {
@@ -23,7 +29,6 @@ body {
     width: 200px;
     border: 0.1px solid #506e6f;
     padding: 10px;
-    z-index: 0;
     height: 150px;
     margin: 0 20px 20px 0;
 }
