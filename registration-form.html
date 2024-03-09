@@ -6,15 +6,17 @@
 		<title>Document</title>
 	</head>
 	<body>
-        <form>
-            <input type="text" id="login" placeholder="Логин" required><br>
-            <input type="password" id="password" placeholder="Пароль" required><br>
-            <label><input type="checkbox" name="strength" value="Сила"> Сила</label><br>
-            <label><input type="checkbox" name="strength" value="Ловкость"> Ловкость</label><br>
-            <label><input type="checkbox" name="strength" value="Интеллект"> Интеллект</label><br>
-            <label><input type="checkbox" name="strength" value="Выносливость"> Выносливость</label><br>
-            <textarea id="description" placeholder="Описание" required></textarea><br>
-            <button type="button" onclick="submitForm()">Зарегистрировать</button>
-        </form>
+		<form>
+			<input type="text" id="login" placeholder="Логин" required /><br />
+			<input type="password" id="password" placeholder="Пароль" required /><br />
+			<label><input type="checkbox" name="strength" value="Сила" /> Сила</label><br />
+			<label><input type="checkbox" name="strength" value="Ловкость" /> Ловкость</label><br />
+			<label><input type="checkbox" name="strength" value="Интеллект" /> Интеллект</label><br />
+			<label><input type="checkbox" name="strength" value="Выносливость" /> Выносливость</label><br />
+			<textarea id="description" placeholder="Описание" required></textarea><br />
+			<button type="button" onclick="submitForm()">Зарегистрировать</button>
+		</form>
+		<div id="user-cards-container"></div>
+	</body>
 	<script src="scripts/signin-form.js"></script>
 </html>
