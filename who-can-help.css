@@ -4,7 +4,7 @@
 }
 
 body {
-    display: grid;
+    display: block;
     background-color: #638889;
 }
 
@@ -26,10 +26,6 @@ body {
     z-index: 0;
     height: 150px;
     margin: 0 20px 20px 0;
-}
-
-.display {
-    display: none;
 }
 
 @media only screen and (min-width: 450px) {
