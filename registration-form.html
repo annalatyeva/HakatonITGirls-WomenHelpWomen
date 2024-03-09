@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/styles/normalize.css" />
-		<link rel="stylesheet" href="/styles/registration-form.css" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/regisration-form.css" />
 		<title>Registration-form</title>
 	</head>
 	<body>
@@ -37,14 +37,15 @@
 					<input type="checkbox" name="entertaiment" value="8" /> Развлечения для детей <br />
 					<input type="checkbox" name="home" value="9" /> Предоставление временного проживания <br />
 					<input type="checkbox" name="car" value="10" /> Автоволонтерство <br />
-					<input type="checkbox" name="child_care" value="10" /> Услуги няни/сиделки
+					<input type="checkbox" name="child_care" value="11" /> Услуги няни/сиделки
 				</div>
 				<div>
 					<label for="comment"> Дополнительный комментарий: <textarea name="comment" cols="40" rows="3"></textarea></label>
 				</div>
 				<br />
-				<div><button type="button" class="button_registration">Сохранить</button></div>
+				<div><button type="button" class="button_registration" onclick="registrationUser()">Сохранить</button></div>
 			</form>
 		</div>
+		<script src="scripts/registration-form.js"></script>
 	</body>
 </html>

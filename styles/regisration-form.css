@@ -1,0 +1,53 @@
+h1, 
+h2,
+ h3{
+    color: #3E5439;
+}
+.registration-form{
+    color: #3E5439;
+    background-color: #E8F7D5;
+    padding: 20px;
+    font-family: "InriaSerif";
+    font-size: 15px;
+    padding-left: 25vw;
+}
+h1{
+    font-size: 30;
+}
+h2{
+    font-size: 25;
+}
+h3{
+    font-size: 23;
+}
+.cat{
+    float: right;
+    width: 30vw;
+    height: 50vh;
+}
+.button_registration{
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    margin-right: 40px;
+    background-color: darkgreen;
+    color: yellow;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }**/
+  input{
+    margin-left: 20px;
+  }
