@@ -1,0 +1,51 @@
+* {
+    font-family: InriaSerif;
+    font-size: 20;
+}
+
+body {
+    display: grid;
+    background-color: #638889;
+}
+
+#results {
+    width: 100%;
+    display: block;
+    float: left;
+    transition: width .2s;
+}
+
+.card {
+    display: list-item;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #9DBC98;
+    width: 200px;
+    border: 0.1px solid #506e6f;
+    padding: 10px;
+    z-index: 0;
+    height: 150px;
+    margin: 0 20px 20px 0;
+}
+
+.display {
+    display: none;
+}
+
+@media only screen and (min-width: 450px) {
+    #results {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #results {
+        width: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #results {
+        width: 25%;
+    }
+}
