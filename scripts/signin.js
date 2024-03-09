@@ -1,32 +1,19 @@
-const Users = [
-    {
-        id: 1,
-        login: 'svetaSS',
-        password: 'adfdf',
-        strenth: ['a', 'b', 'c'],
-        description: 'ddccfdfd',
-    },
-    {
-        id: 2,
-        login: 'admin',
-        password: 'admin1',
-        strenth: ['a', 'b', 'd'],
-        description: 'fddfdf',
-    }
-]
-
 function GetsignInInfo () {
-    event.preventDefault();
-    let login = document.querySelector("#sign-login").value;
-    let password = document.querySelector("#sign-password").value;
-    let isUserFound = false;
-    let result = 'gjkmpjdfntkm yt yfqlty';
+
+    const loginInput = document.getElementById('login').value;
+    const passwordInput = document.getElementById('password').value;
     
-    for (let i = 0; i < Users.length; i++) {
-        if (Users[i].login === login) {
-            Users[i].password === password ? result = 'вход' : result = 'неверный пароль';
-            isUserFound = true;
+    const users = JSON.parse(localStorage.getItem('herHelpHubUsers')) || [];
+    
+    const user = users.find(user => user.login === loginInput);
+    
+    if (user) {
+        if (user.password === passwordInput) {
+            alert('Вход выполнен!');
+        } else {
+            alert('Пароль не совпадает.');
         }
+    } else {
+        alert('Пользователь не найден.');
     }
-    console.log(result);
 }

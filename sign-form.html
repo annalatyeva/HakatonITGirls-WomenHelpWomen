@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/styles/normalize.css" />
-		<link rel="stylesheet" href="/styles/signin-form.css" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/signin-form.css" />
 		<title>Signin form</title>
 	</head>
 	<body>
@@ -15,7 +15,7 @@
 				<br />
 				<div><label for="password">Пароль</label> <input type="password" id="password" /></div>
 				<br />
-				<div><button type="button" class="button_signin">Войти</button></div>
+				<div><button type="button" class="button_signin" onclick="GetsignInInfo()">Войти</button></div>
 			</form>
 			<section class="to registeration">
 				<div>Зарегистрируйся пожалуйста, если у тебя нет аккаунта</div>
@@ -23,10 +23,7 @@
 					<a href="/registration-form.html">Зарегистрироваться</a>
 				</button>
 			</section>
-			<section class="reset_password">
-				<div>Забыла пароль? Восстановить пароль:</div>
-				<button class="reset_password_but">Восстановить пароль</button>
-			</section>
 		</div>
+		<script src="scripts/signin.js"></script>
 	</body>
 </html>

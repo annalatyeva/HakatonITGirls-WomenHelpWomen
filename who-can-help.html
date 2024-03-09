@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поиск специалистов</title>
-    <link rel="stylesheet" href="./who-can-help.css">
-</head>
-<body>
-    <form>
-    <label for="list-specialists" class="who-can-help-label">Поиск специалистов</label>
-    <input id="list-specialists" class="who-can-help-input" type="search" size="50" placeholder="Юрист">
-    <input id="button-search" type="submit">
-    </form>
-    <br>
-    <div id="results">
-
-    </div>
-    <script src="./who-can-help.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Поиск специалистов</title>
+		<link rel="stylesheet" href="./who-can-help.css" />
+	</head>
+	<body>
+		<form>
+			<label for="list-specialists" class="who-can-help-label">Поиск специалистов</label>
+			<select class="who-can-help-input" name="helpsCategory" id="list-specialists">
+				<option value="1" selected>Психология</option>
+				<option value="2">Семейное право</option>
+				<option value="3">Гражданское право</option>
+				<option value="4">Международное право</option>
+				<option value="5">Женское здоровье</option>
+				<option value="6">Медицина</option>
+				<option value="7">Кулинарии/приготовление пищи</option>
+				<option value="8">Развлечения для детей</option>
+				<option value="9">Предоставление временного проживания</option>
+				<option value="10">Автоволонтерство</option>
+				<option value="11">Услуги няни/сиделки</option>
+			</select>
+			<button id="button-search" onclick="searchUsersByStrength()">Найти</button>
+		</form>
+		<br />
+		<div id="results"></div>
+		<script src="./who-can-help.js"></script>
+	</body>
 </html>
