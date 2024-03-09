@@ -1,12 +1,37 @@
 header {
     background-color: rgb(127, 194, 155);
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin: 10px;
     width: 100%;
     height: 20vh;
 }
-.logo {
+header .logo {
+    max-width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0);
+}
+.button {
+    height: 10px;
     width: 40px;
+    padding: 5px;
+    margin: 10px;
+}
+.main-img {
+    width: 50%;
+    height: 40%;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(160, 218, 218);
+}
+.footer-container {
+    background-color: rgb(18, 71, 40);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
